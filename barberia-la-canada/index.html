@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Barbería La Cañada</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Barbería en barrio Alberdi, Córdoba. Cortes, fades, barba con navaja y turnos online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Barbería La Cañada, inicio">
+      <svg viewBox="0 0 30 40" aria-hidden="true"><rect x="9" y="1" width="12" height="4" rx="2" fill="#B8893B"/><rect x="9" y="35" width="12" height="4" rx="2" fill="#B8893B"/><clipPath id="pc"><rect x="10" y="5" width="10" height="30" rx="2"/></clipPath><g clip-path="url(#pc)"><rect x="10" y="5" width="10" height="30" fill="#fff"/><g fill="#C8102E"><path d="M8 9 L22 1 L22 6 L8 14Z"/><path d="M8 21 L22 13 L22 18 L8 26Z"/><path d="M8 33 L22 25 L22 30 L8 38Z"/></g></g></svg>
+      <span><b>La Cañada</b><small>Barbería · Alberdi</small></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html" aria-current="page">Inicio</a>
+      <a href="turnos.html">Servicios</a>
+      <a class="cta" href="turnos.html">Sacá turno</a>
+    </nav>
+  </div>
+</header>
+<div class="pole" aria-hidden="true"></div>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-text">
+        <p class="kicker">Barrio Alberdi · Córdoba</p>
+        <h1>Corte, barba y <span>navaja</span>, sin esperar.</h1>
+        <p class="lead">Elegí el servicio, el barbero y el horario desde el celular. Te confirmamos por WhatsApp y llegás directo a la silla.</p>
+        <div class="actions">
+          <a class="btn btn-red" href="turnos.html">Reservar turno</a>
+          <a class="btn btn-line" href="#precios">Ver precios</a>
+        </div>
+      </div>
+      <div class="chair" aria-hidden="true">
+        <svg viewBox="0 0 240 260">
+          <rect x="70" y="18" width="100" height="96" rx="14" fill="#B8893B"/>
+          <rect x="80" y="28" width="80" height="76" rx="10" fill="#8E2A33"/>
+          <rect x="52" y="112" width="136" height="34" rx="10" fill="#8E2A33"/>
+          <rect x="40" y="96" width="22" height="58" rx="8" fill="#B8893B"/>
+          <rect x="178" y="96" width="22" height="58" rx="8" fill="#B8893B"/>
+          <rect x="66" y="146" width="108" height="26" rx="8" fill="#B8893B"/>
+          <rect x="112" y="172" width="16" height="56" fill="#C9CED8"/>
+          <rect x="72" y="226" width="96" height="14" rx="7" fill="#C9CED8"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="strip" aria-label="Datos del local">
+    <dl class="wrap" style="margin-block:0">
+      <div><dt>Hoy</dt><dd><span class="live" id="live">Mar a Sáb</span></dd></div>
+      <div><dt>Horario</dt><dd>Mar–Vie 10 a 20 · Sáb 9 a 18</dd></div>
+      <div><dt>Dirección</dt><dd>Av. Colón 1850, Alberdi</dd></div>
+      <div><dt>Turnos</dt><dd>Online o por WhatsApp</dd></div>
+    </dl>
+  </section>
+
+  <section class="block" id="precios">
+    <div class="wrap">
+      <div class="head"><h2>Servicios y precios</h2><a href="turnos.html">Reservar →</a></div>
+      <div class="price-list" id="price-list"></div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:0">
+    <div class="wrap">
+      <div class="head"><h2>Los barberos</h2></div>
+      <div class="team">
+        <article class="barber"><div class="avatar">N</div><div><h3>Nico</h3><p>Fades y degradados. 8 años detrás de la silla.</p></div></article>
+        <article class="barber"><div class="avatar">T</div><div><h3>Tomás</h3><p>Barba con navaja y toalla caliente.</p></div></article>
+        <article class="barber"><div class="avatar">L</div><div><h3>Lucía</h3><p>Cortes clásicos, tijera y color.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visitanos">
+    <div class="wrap">
+      <div>
+        <h2>Dónde estamos</h2>
+        <dl>
+          <dt>Dirección</dt><dd>Av. Colón 1850, B° Alberdi, Córdoba</dd>
+          <dt>WhatsApp</dt><dd>351 555-0188</dd>
+          <dt>Pagos</dt><dd>Efectivo, transferencia y Mercado Pago</dd>
+        </dl>
+        <p style="margin-top:20px"><a class="btn btn-line" href="https://www.google.com/maps/search/Av.+Col%C3%B3n+1850,+C%C3%B3rdoba" target="_blank" rel="noopener">Abrir en Google Maps</a></p>
+      </div>
+      <div class="hours">
+        <table id="hours" aria-label="Horarios de la semana"></table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>Barbería La Cañada · Alberdi, Córdoba</p>
+    <p>Proyecto de portafolio de Angel · negocio ficticio</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

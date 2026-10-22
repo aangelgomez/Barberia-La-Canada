@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Turnos · Barbería La Cañada</title>
+<meta name="description" content="Reservá tu turno en Barbería La Cañada: elegí servicio, barbero, día y horario.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Barbería La Cañada, inicio">
+      <svg viewBox="0 0 30 40" aria-hidden="true"><rect x="9" y="1" width="12" height="4" rx="2" fill="#B8893B"/><rect x="9" y="35" width="12" height="4" rx="2" fill="#B8893B"/><clipPath id="pc"><rect x="10" y="5" width="10" height="30" rx="2"/></clipPath><g clip-path="url(#pc)"><rect x="10" y="5" width="10" height="30" fill="#fff"/><g fill="#C8102E"><path d="M8 9 L22 1 L22 6 L8 14Z"/><path d="M8 21 L22 13 L22 18 L8 26Z"/><path d="M8 33 L22 25 L22 30 L8 38Z"/></g></g></svg>
+      <span><b>La Cañada</b><small>Barbería · Alberdi</small></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="turnos.html" aria-current="page">Servicios</a>
+      <a class="cta" href="#resumen">Tu turno</a>
+    </nav>
+  </div>
+</header>
+<div class="pole" aria-hidden="true"></div>
+
+<main>
+  <section class="page-head">
+    <div class="wrap">
+      <h1>Sacá tu turno</h1>
+      <p>Cuatro pasos y listo. Los horarios tachados ya están ocupados.</p>
+    </div>
+  </section>
+
+  <div class="wrap booking">
+    <form id="form" novalidate>
+      <fieldset class="step" style="border:0;padding:0;margin:0 0 30px">
+        <legend class="step-title"><span>1</span><h2>Servicio</h2></legend>
+        <div class="options" id="services"></div>
+      </fieldset>
+      <fieldset class="step" style="border:0;padding:0;margin:0 0 30px">
+        <legend class="step-title"><span>2</span><h2>Barbero</h2></legend>
+        <div class="options" id="barbers"></div>
+      </fieldset>
+      <div class="step">
+        <div class="step-title"><span>3</span><h2>Día y horario</h2></div>
+        <div class="days" id="days" role="group" aria-label="Día"></div>
+        <div class="slots" id="slots" role="group" aria-label="Horario" style="margin-top:14px"></div>
+        <p class="hint" id="slot-hint">Elegí un día para ver los horarios.</p>
+      </div>
+      <div class="step">
+        <div class="step-title"><span>4</span><h2>Tus datos</h2></div>
+        <div class="field">
+          <label for="name">Nombre</label>
+          <input id="name" name="name" autocomplete="given-name" placeholder="Ej: Martín">
+        </div>
+      </div>
+    </form>
+
+    <aside class="ticket" id="resumen" aria-label="Resumen del turno">
+      <div class="pole" aria-hidden="true"></div>
+      <div class="ticket-body">
+        <h2>Tu turno</h2>
+        <dl>
+          <dt>Servicio</dt><dd id="r-service">—</dd>
+          <dt>Duración</dt><dd id="r-dur">—</dd>
+          <dt>Barbero</dt><dd id="r-barber">—</dd>
+          <dt>Día</dt><dd id="r-day">—</dd>
+          <dt>Hora</dt><dd id="r-time">—</dd>
+        </dl>
+        <div class="total"><span>A pagar en el local</span><span id="r-price">$0</span></div>
+        <a class="btn btn-red" id="send" href="#" target="_blank" rel="noopener" aria-disabled="true">Confirmar por WhatsApp</a>
+        <small id="missing">Falta elegir: servicio, día y horario.</small>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>Barbería La Cañada · Alberdi, Córdoba</p>
+    <p>Proyecto de portafolio de Angel · negocio ficticio</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
